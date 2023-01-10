@@ -2,6 +2,7 @@ require("dotenv").config()
 require("./src/connection/Conn")()
 const express = require("express")
 const cors = require("cors")
+const port = process.env.PORT || 3000
 
 const routers = require("./src/routes/index.routes")
 
@@ -12,4 +13,4 @@ app.use(express.json())
 
 app.use(routers)
 
-app.listen(3000, console.log("localhost:3000"))
+app.listen(port, console.log("localhost:3000"))
