@@ -4,7 +4,7 @@ const bcrypt = require("bcrypt")
 
 module.exports = {
   async greetings(req, res) {
-    res.status(200).json({ msg: "Seja Bem vindo!" })
+    res.status(200).json({ msg: "Seja Bem vindo!!!🎱" })
   },
 
   async login(req, res) {
